@@ -10,8 +10,9 @@
 int dataPinSensor1 = 2;
 int dataPinSensor2 = 4;
 SimpleDHT11 dht1(dataPinSensor1);
-SimpleDHT11 dht2(dataPinSensor2);
-
+SimpleDHT11 dht2(dataPinSensor2);//define dht2
+//define dht1
+//define datapinsensor
 void setup() {
   Serial.begin(115200);
 }
@@ -19,9 +20,11 @@ void setup() {
 void loop() {
   // Reading data from sensor 1...
   Serial.println("=================================");
+  serial.println(".................................");
 
   // Reading data from sensor 1...
   Serial.println("Getting data from sensor 1...");
+  serial.println("........");
   
   // read without samples.
   byte temperature = 0;
