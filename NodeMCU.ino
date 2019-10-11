@@ -6,6 +6,7 @@
 
 #define SSID "your_wifi_ssid"
 #define SSID_PASSWORD "your_wifi_ssid_password"
+//define all headerfiles
 
 ThingerESP8266 thing(USERNAME, DEVICE_ID, DEVICE_CREDENTIAL);
 
@@ -16,9 +17,11 @@ void setup() {
 
   // digital pin control example (i.e. turning on/off a light, a relay, configuring a parameter, etc)
   thing["led"] << digitalPin(LED_BUILTIN);
+  //define LED_BUILTIN
 
   // resource output example (i.e. reading a sensor value)
   thing["millis"] >> outputValue(millis());
+  //define outputvalue
 
   // more details at http://docs.thinger.io/arduino/
 }
@@ -26,5 +29,6 @@ void setup() {
 void loop() {
   thing.handle();
   Serial.print("Working");
+  pinModel(1,OUTPUT);
   
 }
