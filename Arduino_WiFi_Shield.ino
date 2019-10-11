@@ -46,8 +46,7 @@ char pass[] = "YourPassword";
 void setup()
 {
   // Debug console
-  Serial.begin(9600);
-
+  Serial.begin(9600);//i'm Invicta
   Blynk.begin(auth, ssid, pass);
   // You can also specify server:
   //Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 80);
@@ -57,5 +56,6 @@ void setup()
 void loop()
 {
   Blynk.run();
+  Serial.print("Working");
 }
 
