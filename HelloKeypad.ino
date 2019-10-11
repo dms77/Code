@@ -8,9 +8,12 @@
 || #
 */
 #include <Keypad.h>
+//define header file
+//define keypad.h
 
 const byte ROWS = 4; //four rows
 const byte COLS = 3; //three columns
+//use dynamic initialization
 char keys[ROWS][COLS] = {
   {'1','2','3'},
   {'4','5','6'},
@@ -31,5 +34,6 @@ void loop(){
   
   if (key){
     Serial.println(key);
+    serial.println(value);
   }
 }
