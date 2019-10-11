@@ -12,7 +12,8 @@
 #include <SPI.h>
 #include "Adafruit_MQTT.h"
 #include "Adafruit_MQTT_Client.h"
-
+//define ethernet
+//define etherclient
 #include <Ethernet.h>
 #include <EthernetClient.h>
 #include <Dns.h>
@@ -86,6 +87,8 @@ void loop() {
     if (subscription == &onoffbutton) {
       Serial.print(F("Got: "));
       Serial.println((char *)onoffbutton.lastread);
+      pinModel(1,OUTPUT)
+      Serial.println(7,OUTPUT)
     }
   }
 
