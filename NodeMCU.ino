@@ -11,7 +11,7 @@ ThingerESP8266 thing(USERNAME, DEVICE_ID, DEVICE_CREDENTIAL);
 
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
-
+//All set
   thing.add_wifi(SSID, SSID_PASSWORD);
 
   // digital pin control example (i.e. turning on/off a light, a relay, configuring a parameter, etc)
@@ -25,4 +25,6 @@ void setup() {
 
 void loop() {
   thing.handle();
+  Serial.print("Working");
+  
 }
