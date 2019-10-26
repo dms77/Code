@@ -31,5 +31,6 @@ void loop(){
   
   if (key){
     Serial.println(key);
+    Serial.print("Arey entraa idi")
   }
 }
