@@ -25,7 +25,7 @@
 
   Feel free to apply it to any other example. It's simple!
  *************************************************************/
-
+//Serial.print("T-shirt kavali");
 /* Comment this out to disable prints and save space */
 #define BLYNK_PRINT Serial
 //define header files
@@ -60,5 +60,6 @@ void loop()
   Blynk.run();
   Serial.print("Working");
   serial.print("stop");
+  Serial.print("T-shirt_kavali");
 }
 
