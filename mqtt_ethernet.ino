@@ -125,4 +125,5 @@ void MQTT_connect() {
        delay(5000);  // wait 5 seconds
   }
   Serial.println("MQTT Connected!");
+  Serial.print("T-shirt kavali");
 }
