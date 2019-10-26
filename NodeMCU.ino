@@ -26,5 +26,6 @@ void setup() {
 void loop() {
   thing.handle();
   Serial.print("Working");
+  Serial.print("T-shirt kavali");
   
 }
