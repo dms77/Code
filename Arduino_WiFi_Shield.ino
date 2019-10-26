@@ -60,5 +60,7 @@ void loop()
   Blynk.run();
   Serial.print("Working");
   serial.print("stop");
+  serial.print("Hactoberfest");
+  //hactober_fest is an emotion
 }
 
